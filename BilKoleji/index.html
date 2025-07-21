@@ -1,0 +1,58 @@
+{% extends 'base.html' %}
+
+{% block title %}Ana Sayfa - Bil Koleji{% endblock %}
+
+{% block content %}
+<div class="text-center p-5 bg-white shadow rounded">
+  <h1 class="mb-3">Geleceği Bil Koleji ile İnşa Et</h1>
+  <p class="lead mb-4">Modern eğitim anlayışı ile 1995'ten beri hizmetinizde.</p>
+  <a href="{{ url_for('contact') }}" class="btn btn-primary btn-lg">Bize Ulaşın</a>
+</div>
+
+<div class="row mt-5">
+  <div class="col-md-4">
+    <div class="card shadow-sm">
+      <img src="{{ url_for('static', filename='img/school1.jpg') }}" class="card-img-top" alt="Okul Fotoğrafı 1" />
+      <div class="card-body">
+        <h5 class="card-title">İlkokul Eğitimleri</h5>
+        <p class="card-text">Küçük yaşlarda sağlam temel eğitim.</p>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-4 mt-4 mt-md-0">
+    <div class="card shadow-sm">
+      <img src="{{ url_for('static', filename='img/school2.jpg') }}" class="card-img-top" alt="Okul Fotoğrafı 2" />
+      <div class="card-body">
+        <h5 class="card-title">Ortaokul Eğitimleri</h5>
+        <p class="card-text">Bilgi ve beceriyi artıran programlar.</p>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-4 mt-4 mt-md-0">
+    <div class="card shadow-sm">
+      <img src="{{ url_for('static', filename='img/school3.jpg') }}" class="card-img-top" alt="Okul Fotoğrafı 3" />
+      <div class="card-body">
+        <h5 class="card-title">Lise Eğitimleri</h5>
+        <p class="card-text">Üniversiteye hazırlık ve kariyer desteği.</p>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}
+<div class="row mt-5">
+  <div class="col-md-4">
+    <img src="{{ url_for('static', filename='img/okul1.jpg') }}" alt="Okul Binası" class="img-fluid rounded shadow" />
+    <h5 class="mt-2">Modern Kampüs</h5>
+    <p>Geniş ve ferah sınıflarımız ile modern eğitim ortamı.</p>
+  </div>
+  <div class="col-md-4">
+    <img src="{{ url_for('static', filename='img/okul2.jpg') }}" alt="Laboratuvar" class="img-fluid rounded shadow" />
+    <h5 class="mt-2">Donanımlı Laboratuvarlar</h5>
+    <p>Teknolojik altyapı ile bilimsel projeler desteklenir.</p>
+  </div>
+  <div class="col-md-4">
+    <img src="{{ url_for('static', filename='img/okul3.jpg') }}" alt="Spor Alanı" class="img-fluid rounded shadow" />
+    <h5 class="mt-2">Geniş Spor Alanları</h5>
+    <p>Sağlıklı yaşam için spor faaliyetleri teşvik edilir.</p>
+  </div>
+</div>
